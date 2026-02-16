@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Faith Chapel | Assemblies of God</title>
+        <meta
+            name="description"
+            content="Faith Chapel Assemblies of God, McCarthy Hills - The Faith of Our Fathers."
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="loader">
+            <div class="loader-content">
+                <div class="logo-shimmer">FAITH CHAPEL</div>
+                <div class="loader-line"></div>
+            </div>
+        </div>
+
+        <header class="glass-header">
+            <div class="header-left">
+                <div class="brand-logo"><i class="fas fa-church"></i> Faith Chapel Media</div>
+            </div>
+            <div class="header-right">
+                <div id="date-display" class="date-text"></div>
+                <div class="pastor-info">
+                    <span class="pastor-label">Lead Pastor</span>
+                    <span class="pastor-name">Rev. Ben-Newlife Zotoo</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="hero fade-in-up">
+                <h1>
+                    Faith Chapel <br /><span class="sub-h1"
+                        >Assemblies of God</span
+                    >
+                </h1>
+                <p class="tagline">“The Faith of Our Fathers”</p>
+                <div class="gold-divider-center"></div>
+                <p class="scripture">
+                    "For we walk by faith, not by sight." <span id="nextln">— 2 Corinthians 5:7</span>
+                </p>
+            </section>
+
+            <section
+                class="live-section fade-in-up"
+                style="animation-delay: 0.1s"
+            >
+                <div class="live-card">
+                    <div class="live-indicator">
+                        <span class="pulse-dot"></span> LIVE STREAM
+                    </div>
+                    <div class="live-content">
+                        <h3>Join Service Online</h3>
+                        <p>Connect with us in worship, wherever you are.</p>
+                        <a
+                            href="https://www.facebook.com/share/17tc165gkZ/"
+                            target="_blank"
+                            class="btn-gold-gradient"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fab fa-facebook-f"></i> Watch on Facebook
+                            Live
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div
+                class="accordion-wrapper fade-in-up"
+                style="animation-delay: 0.2s"
+            >
+
+
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleAccordion(this)">
+                        <div class="acc-title">
+                            <i class="fas fa-globe icon-gold"></i>
+                            <span>Official Website</span>
+                        </div>
+                        <i class="fas fa-chevron-down acc-arrow"></i>
+                    </div>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <a href="#" class="link-block">
+                                <span>Visit FaithChapel.org</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleAccordion(this)">
+                        <div class="acc-title">
+                            <i class="fab fa-youtube icon-gold"></i>
+                            <span>YouTube Channels</span>
+                        </div>
+                        <i class="fas fa-chevron-down acc-arrow"></i>
+                    </div>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <a href="https://www.youtube.com/@faithchapelagmchill5703" class="link-block" target="_blank">
+                                <span
+                                    ><i class="fab fa-youtube icon-gold"></i> Official
+                                    Church Page</span
+                                >
+                                <span class="btn-sm">Watch</span>
+                            </a>
+                            <a href="https://www.youtube.com/@FCM-AG" target="_blank" class="link-block">
+                                <span
+                                    ><i class="fab fa-youtube icon-gold"></i> FCM
+                                    </span
+                                >
+                                <span class="btn-sm">Connect</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleAccordion(this)">
+                        <div class="acc-title">
+                            <i class="fab fa-facebook-f icon-gold"></i>
+                            <span>Facebook Community</span>
+                        </div>
+                        <i class="fas fa-chevron-down acc-arrow"></i>
+                    </div>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <a href="https://www.facebook.com/share/17tc165gkZ/" target="_blank" class="link-block">
+                                <span>Main Church Page</span>
+                                <span class="btn-sm">Follow</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleAccordion(this)">
+                        <div class="acc-title">
+                            <i class="fab fa-instagram icon-purple"></i>
+                            <span>Instagram</span>
+                        </div>
+                        <i class="fas fa-chevron-down acc-arrow"></i>
+                    </div>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <div class="multi-link">
+                                <div class="link-meta">
+                                    <strong>Main Church</strong>
+                                    <small>Daily inspiration & updates</small>
+                                </div>
+                                <a href="https://www.instagram.com/faithchapelag_mchill/" class="btn-sm-action" target="_blank">Visit Page</a>
+                            </div>
+                            <div class="multi-link">
+                                <div class="link-meta">
+                                    <strong>Youth Church</strong>
+                                    <small>Youth-led content & events</small>
+                                </div>
+                                <a href="https://www.instagram.com/fcmhill_youth/" class="btn-sm-action" target="_blank">Visit Page</a>
+                            </div>
+                            <div class="multi-link">
+                                <div class="link-meta">
+                                    <strong>Teens church</strong>
+                                    <small>Children and teens events</small>
+                                </div>
+                                <a href="https://www.instagram.com/faith_chapelteens_ag/"  class="btn-sm-action" target="_blank">Visit Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleAccordion(this)">
+                        <div class="acc-title">
+                            <i class="fab fa-tiktok icon-purple"></i>
+                            <span>TikTok</span>
+                        </div>
+                        <i class="fas fa-chevron-down acc-arrow"></i>
+                    </div>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <a href="https://www.tiktok.com/@faithchapelagmchill" target="_blank" class="link-block-premium tiktok-hover">
+                                <div class="link-main-text">
+                                    <strong>@faithchapelagmchill</strong>
+                                    <span>Short clips & weekly highlights</span>
+                                </div>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleAccordion(this)">
+                        <div class="acc-title">
+                            <i class="fab fa-telegram-plane icon-purple"></i>
+                            <span>Telegram Channel</span>
+                        </div>
+                        <i class="fas fa-chevron-down acc-arrow"></i>
+                    </div>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <p class="donate-text">
+                                Join our community for daily devotionals and
+                                announcements.
+                            </p>
+                            <a
+                                href="https://t.me/fcmhillag" target="_blank"
+                                class="link-block-premium telegram-hover"
+                            >
+                                <span>Join Official Channel</span>
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-item">
+                    <div class="acc-header" onclick="toggleAccordion(this)">
+                        <div class="acc-title">
+                            <i class="fab fa-whatsapp icon-gold"></i>
+                            <span>WhatsApp & Prayer</span>
+                        </div>
+                        <i class="fas fa-chevron-down acc-arrow"></i>
+                    </div>
+                    <div class="acc-body">
+                        <div class="acc-inner">
+                            <a href="#" class="link-block">
+                                <span>Official Church Page</span>
+                                <span class="btn-sm">Chat</span>
+                            </a>
+                            <a href="#" class="link-block">
+                                <span>Church Announcements Channel</span>
+                                <span class="btn-sm">Join</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-item">
+    <div class="acc-header" onclick="toggleAccordion(this)">
+        <div class="acc-title">
+            <i class="fas fa-envelope icon-purple"></i>
+            <span>Email & Inquiries</span>
+        </div>
+        <i class="fas fa-chevron-down acc-arrow"></i>
+    </div>
+    <div class="acc-body">
+        <div class="acc-inner">
+            <p class="donate-text">For prayer requests, counseling, or official church inquiries, please reach out to our administration.</p>
+            
+            <div class="give-card purple-tint">
+                <div class="give-card-left">
+                    <div class="icon-circle-sm">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <div class="give-info">
+                        <strong>Official Email</strong>
+                        <p>faithchapelagmchill@gmail.com</p>
+                    </div>
+                </div>
+                <div class="email-actions">
+                    <a href="mailto:faithchapelagmchill@gmail.com" class="btn-sm-action">Send Email</a>
+                    <button class="btn-icon-only" onclick="copyText('faithchapelagmchill@gmail.com')" title="Copy Email">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-gold-line"></div>
+            <p class="location">McCarthy Hills, Accra, Ghana</p>
+
+            <a href="https://maps.app.goo.gl/TwotvbH3DaZuaCNK7" target="_blank" class="map-link">
+                <i class="fas fa-map-marker-alt"></i> View on Google Maps
+            </a>
+
+            <div class="social-icons-footer">
+                <a href="https://www.facebook.com/share/17tc165gkZ/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/faithchapelag_mchill/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@faithchapelagmchill" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@faithchapelagmchill5703" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 Faith Chapel Assemblies of God.<br />All Rights
+                Reserved.
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
