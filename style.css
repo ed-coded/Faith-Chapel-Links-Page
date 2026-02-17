@@ -354,6 +354,47 @@ h1, h2, h3, .brand-logo, .tagline { font-family: 'Playfair Display', serif; }
     color: white;
 }
 
+/* --- MOBILE RESPONSIVENESS FOR EMAIL SECTION --- */
+@media screen and (max-width: 480px) {
+    /* Stack the email action buttons vertically */
+    .give-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .email-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: row; /* Keep them side-by-side but flexible */
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 10px;
+        border-top: 1px solid rgba(0,0,0,0.05);
+        padding-top: 15px;
+    }
+
+    /* Make the "Send Email" button take up most of the space */
+    .btn-sm-action {
+        flex-grow: 1;
+        text-align: center;
+        padding: 12px; /* Larger tap target for mobile thumbs */
+    }
+
+    /* Keep the copy icon square and easy to tap */
+    .btn-icon-only {
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+
+    /* Adjust font size for mobile descriptions to prevent overlap */
+    .give-info p {
+        font-size: 0.7rem;
+        max-width: 180px; /* Prevents text from hitting the icons */
+    }
+}
+
 /* Ensure the give-card flex properties handle the new button group */
 @media (max-width: 480px) {
     .email-actions {
