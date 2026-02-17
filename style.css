@@ -354,52 +354,53 @@ h1, h2, h3, .brand-logo, .tagline { font-family: 'Playfair Display', serif; }
     color: white;
 }
 
-/* --- MOBILE RESPONSIVENESS FOR EMAIL SECTION --- */
+/* --- CLEAN MOBILE RESPONSIVENESS FOR EMAIL SECTION --- */
 @media screen and (max-width: 480px) {
-    /* Stack the email action buttons vertically */
+    /* 1. Stack the main card content so text is above buttons */
     .give-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 15px !important;
     }
 
+    /* 2. Force the actions to stay in a ROW (Horizontal) */
     .email-actions {
-        width: 100%;
-        display: flex;
-        flex-direction: row; /* Keep them side-by-side but flexible */
-        justify-content: space-between;
-        gap: 10px;
-        margin-top: 10px;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important; 
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 10px !important;
+        margin-top: 15px !important;
         border-top: 1px solid rgba(0,0,0,0.05);
-        padding-top: 15px;
+        padding-top: 15px !important;
+        box-sizing: border-box !important;
     }
 
-    /* Make the "Send Email" button take up most of the space */
-    .btn-sm-action {
-        flex-grow: 1;
-        text-align: center;
-        padding: 12px; /* Larger tap target for mobile thumbs */
+    /* 3. Make the "Send Email" link fill the space */
+    .email-actions a.btn-sm-action {
+        flex: 1 !important; /* This pushes the copy button to the end */
+        height: 45px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px !important;
+        margin: 0 !important;
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
     }
 
-    /* Keep the copy icon square and easy to tap */
-    .btn-icon-only {
-        width: 45px;
-        height: 45px;
-        flex-shrink: 0;
-    }
-
-    /* Adjust font size for mobile descriptions to prevent overlap */
-    .give-info p {
-        font-size: 0.7rem;
-        max-width: 180px; /* Prevents text from hitting the icons */
-    }
-}
-
-/* Ensure the give-card flex properties handle the new button group */
-@media (max-width: 480px) {
-    .email-actions {
-        flex-direction: column;
-        align-items: stretch;
+    /* 4. Keep the "Copy" button a perfect square next to it */
+    .email-actions button.btn-icon-only {
+        width: 45px !important;
+        height: 45px !important;
+        flex-shrink: 0 !important; /* Prevents it from getting squashed */
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+        box-sizing: border-box !important;
     }
 }
 
